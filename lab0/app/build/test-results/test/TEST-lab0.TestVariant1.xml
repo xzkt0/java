@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="lab0.TestVariant1" tests="4" skipped="0" failures="0" errors="0" timestamp="2024-10-25T10:12:47" hostname="LOGARIFM" time="0.023">
+  <properties/>
+  <testcase name="forTask17Test[0](2.0, 3, 15.0)" classname="lab0.TestVariant1" time="0.016"/>
+  <testcase name="forTask17Test[1](1.5, 2, 4.75)" classname="lab0.TestVariant1" time="0.0"/>
+  <testcase name="forTask17Test[2](3.0, 4, 121.0)" classname="lab0.TestVariant1" time="0.0"/>
+  <testcase name="forTask17Test[3](0.5, 3, 1.875)" classname="lab0.TestVariant1" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
