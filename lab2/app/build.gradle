@@ -1,0 +1,31 @@
+plugins {
+    id 'application'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // Заміна JUnit на TestNG
+    testImplementation 'org.testng:testng:7.7.1'
+
+    // Інші залежності
+    implementation 'com.google.guava:guava:31.1-jre' // приклад залежності Guava
+}
+
+test {
+    // Використовуйте TestNG для тестування
+    useTestNG()
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21) // Встановлює версію Java 21
+    }
+}
+
+application {
+    // Вказати основний клас, якщо він знаходиться у кореневому пакеті
+    mainClass = 'MenuItem' // Якщо ваш клас називається MenuItem, або вкажіть правильний клас
+}
