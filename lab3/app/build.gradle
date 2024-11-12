@@ -1,0 +1,36 @@
+plugins {
+    id 'application'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // Заміна JUnit на TestNG
+    testImplementation 'org.testng:testng:7.7.1'
+
+    // Інші залежності
+    implementation 'com.google.guava:guava:31.1-jre' // приклад залежності Guava
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.14.0'
+    implementation 'com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.14.0' // Додаємо цей модуль
+    implementation 'com.fasterxml.jackson.dataformat:jackson-dataformat-xml:2.14.0'
+    implementation 'com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.14.0'
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.9.0'
+    
+}
+test {
+    // Використовуйте TestNG для тестування
+    useTestNG()
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21) // Встановлює версію Java 21
+    }
+}
+
+application {
+    // Вказати основний клас, якщо він знаходиться у кореневому пакеті
+    mainClass = 'MenuItem' // Якщо ваш клас називається MenuItem, або вкажіть правильний клас
+}
